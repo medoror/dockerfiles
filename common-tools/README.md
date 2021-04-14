@@ -1,0 +1,10 @@
+##  Docker image that contains typical tooling within
+##  on a unix workstation.  Includes the following on an ubuntu base image:
+##  yq
+##  jq
+##  vim
+##  git
+##
+##  Build docker image (from the top directory):
+##    docker build -f common-tools/Dockerfile.common-tools.build -t common-tools .
+##
