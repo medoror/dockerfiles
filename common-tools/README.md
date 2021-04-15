@@ -1,4 +1,6 @@
-Docker image that contains typical tooling within on a unix workstation.  Includes the following on an ubuntu base image:
+# Common Tools Docker Image
+
+Docker image with typical tooling of a unix workstation.  Includes the following packages on an ubuntu 20.04 base image:
 1. yq
 1. jq
 1. vim
@@ -6,3 +8,5 @@ Docker image that contains typical tooling within on a unix workstation.  Includ
 
 Build docker image (from the top directory):
  `docker build -f common-tools/Dockerfile.common-tools.build -t common-tools .`
+
+ This docker image is built and pushed [here](https://hub.docker.com/repository/docker/medoror/common-tools)
