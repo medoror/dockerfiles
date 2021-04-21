@@ -5,7 +5,10 @@ RUN apt-get update \
     jq \
     wget \
     vim \
+    python3.8 \
+    python3-pip \
+    python3.8-dev \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget --no-check-certificate https://github.com/mikefarah/yq/releases/download/v4.6.3/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
+RUN pip3 install yq
